@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_object">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:background="@drawable/custome_button"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="32dp"
+        android:hint="ID"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:endIconMode="clear_text"
+        app:helperText="Required*"
+        app:helperTextTextColor="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_edit"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- focusable   không cho chỉnh sửa văn bản-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Họ và tên"
+        app:counterEnabled="true"
+        app:counterMaxLength="100"
+        app:endIconMode="clear_text"
+        app:helperText="Required*"
+        app:helperTextTextColor="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:startIconDrawable="@drawable/ic_edit"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="100"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="SĐT"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:endIconMode="clear_text"
+        app:helperText="Required*"
+        app:helperTextTextColor="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:startIconDrawable="@drawable/ic_edit"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/custome_button"
+        android:text="Thêm"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        tools:ignore="HardcodedText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
